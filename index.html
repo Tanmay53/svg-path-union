@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to SVG</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+        .mb-0 {
+            margin-bottom: 0;
+        }
+        canvas {
+            border: #999 solid;
+        }
+    </style>
+</head>
+<body>
+    <H1>Text to SVG</H1>
+    <h3>Enter Text</h3>
+    <textarea id="theText" cols="30" rows="10" onchange="makeIt()" oninput="makeIt()"></textarea>
+    <h3>Font Size</h3>
+    <input type="number" id="fontSize" value="80" onchange="makeIt()" oninput="makeIt()">mm
+    <h3 class="mb-0">Wood Size</h3>
+    <div class="flex">
+        <div>
+            <h4>Height</h4>
+            <div class="flex">
+                <input type="number" id="woodHeight" value="800" onchange="makeIt()" oninput="makeIt()">
+                mm
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <div>
+            <h4>Width</h4>
+            <div class="flex">
+                <input type="number" id="woodWidth" value="1220" onchange="makeIt()" oninput="makeIt()">
+                mm
+            </div>
+        </div>
+    </div>
+    <h3>Preview</h3>
+    <div id="canvasBox">
+    </div>
+</body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+<script src="./union_b.min.js"></script>
+<script src="./main.min.js"></script>
+
+</html>

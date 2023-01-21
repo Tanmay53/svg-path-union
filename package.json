@@ -2,6 +2,13 @@
   "dependencies": {
     "js-clipper": "^1.0.1",
     "path-intersection": "^2.2.1",
+    "svg-path-properties": "^1.1.0",
     "svg-pathdata": "^6.0.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
   }
 }

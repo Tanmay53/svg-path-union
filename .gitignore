@@ -1,7 +1,8 @@
 node_modules
 inkscape-master
 svgs
-text-to-svg
+text-to-svg*
 *.zip
 *.min.js
 package-lock.json
+Gruntfile.js
